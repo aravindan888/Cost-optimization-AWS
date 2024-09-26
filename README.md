@@ -9,7 +9,7 @@ so when the developer forgets to delete snapshots and deletes the ec2/ volume af
 we will be using lambda function of python code with module a called boto3 ( for communicating with AWS API) to delete the EBS snapshots
 
 we can also attach this function using cloudwatch 
-/*(this code will get an error :
+/*(this code (lambdafn.py) might get an error :
 1.edit the time to execute to 10 sec in config tab
 2. give permission to IAM roles and create policies for decribe instances, snapshots..... or you can select all permissions(worst case) )*/
 
